@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="ToDoApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Todo</title>
+        <meta name="description" content="">
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+
+        <div class="row">
+            <div ng-view></div>
+        </div>
+
+
+        <!-- SCRIPTS -->
+        <script src="/js/angular.js"></script>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/moment.js"></script>
+        <script src="/js/angular-route.js"></script>
+
+        <!-- VIEWS -->
+        <script src="views/page/page.js"></script>
+
+        <!-- SERVICES -->
+        <script src="services/todo.js"></script>
+
+        <!-- APP -->
+        <script src="app.js"></script>
+    </body>
+</html>

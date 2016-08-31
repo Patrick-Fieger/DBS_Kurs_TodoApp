@@ -1,0 +1,54 @@
+<h1>DBS ToDoApp</h1>
+
+<p>In nur 3 Stunden programmiert und nur 100 Zeilen groß! :)</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<h2>Aufgabe Hinzufügen:</h2>
+
+<form ng-submit="sendData()">
+
+<input type="text" ng-model="eintrag.aufgabe" placeholder="Aufgabe">
+<input type="date" placeholder="Zeitangabe" ng-model="eintrag.zeit">
+
+<div class="color_wrapper">
+	<div ng-click="changeColor('red')" class="red active"></div>
+	<div ng-click="changeColor('green')" class="green"></div>
+	<div ng-click="changeColor('blue')" class="blue"></div>
+</div>
+<br>
+<br><br><br>
+<button type="submit">Aufgabe erstellen</button>
+
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<ul>
+	<li class="{{eintrag.prio}}" ng-repeat="eintrag in allentries">
+		{{eintrag.aufgabe}} am
+		{{eintrag.zeit}}
+
+		<div class="delete">
+			<button ng-click="deleteEntry(eintrag.id)">Aufgabe löschen</button>
+		</div>
+
+	</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
